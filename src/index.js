@@ -14,7 +14,7 @@ const publicDirectoryPath = path.join(__dirname, '../public')
 
 app.use(express.static(publicDirectoryPath))
 
-const port = process.env.port || 3000
+const port = process.env.PORT || 3000
 
 io.on('connection', (socket)=>{
     console.log('New websocket connection!')
